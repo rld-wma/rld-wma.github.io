@@ -1,17 +1,20 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
-    font-style: normal;
+    font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
+/* Navbar */
 .navbar {
-    background-color:#f0a500;;
+    background-color: #f0a500;
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -28,7 +31,7 @@ body {
 
 .navbar .logo {
     font-family: "Afacad Flux", sans-serif;
-    color: #000000;
+    color: #000;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -44,9 +47,8 @@ body {
 }
 
 .navbar .nav-links li a {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
-    color: #000000;
+    color: #000;
     position: relative;
     text-decoration: none;
     font-size: 1rem;
@@ -67,4 +69,80 @@ body {
 
 .navbar .nav-links li a:hover::after {
     width: 100%;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-color: #f0a500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+}
+
+.hero-title {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Button */
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #f0a500;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
 }
