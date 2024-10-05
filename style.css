@@ -4,18 +4,16 @@
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
-/* Navbar */
 .navbar {
     background-color: #f0a500;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -70,14 +68,12 @@ body {
     width: 100%;
 }
 
-/* Header Container */
 .container {
     width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
     background-color: #f0a500;
@@ -92,22 +88,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85%;
+    height: 70%;
 }
 
 .hero-title {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-    font-weight: 500;
-    font-size: 2.5rem;
+    font-weight: 400;
+    font-size: 2.50rem;
     margin-bottom: 3rem;
 }
 
-/* Button */
 .btn {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -144,4 +139,285 @@ body {
 .btn:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+#WeDo {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.image-weDo {
+    max-width: 35%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+#WeDo .para {
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#WeDo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.btn-weDo {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-weDo:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.ourservices {
+    width: 100%;
+    margin: 40px 50px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+}
+
+#services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    width: 85%;
+    margin-bottom: 30px;
+    margin: 30px 50px;
+}
+
+.title h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.column-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000000;
+    margin: 0 10px;
+}
+
+.column h4 {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.column .para {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#marquee {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 5.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.marquee-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000000;
+}
+
+.left-to-right {
+    animation: marquee-left-to-right 25s linear infinite;
+}
+
+.right-to-left {
+    animation: marquee-right-to-left 25s linear infinite;
+}
+
+@keyframes marquee-left-to-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes marquee-right-to-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-services {
+    display: inline-block;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.btn-services:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+.email {
+    flex: 2;
+    max-width: 600px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .email {
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.footer .email h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.footer .email h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.footer-text h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.footer h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin: 0;
+    color: #000;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+#subscribe-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#subscribe-form input[type="email"],
+.btn-subscribe {
+    width: 100%;
+    padding: 15px 5px;
+    border: 1px solid #b8b6b6;
+    border-radius: 4px;
+    color: #333;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.btn-subscribe {
+    background-color: #f0a500;
+    text-align: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background-color: #cf8500;
 }
