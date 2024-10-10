@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 .navbar .logo {
@@ -81,7 +81,7 @@ body {
 }
 
 .hero {
-    margin-top: -100px;
+    margin-top: -125px;
     height: 100vh;
     background-color: #050a30;
     display: flex;
@@ -111,6 +111,7 @@ body {
     font-size: 2.50rem;
     margin-bottom: 3rem;
     color: #fdf9f9;
+    line-height: 1.25;
 }
 
 .btn {
@@ -203,7 +204,7 @@ body {
 }
 
 .btn-weDo:hover {
-    background-color: #000000;
+    background-color: #050a30;
     color: white;
 }
 
@@ -241,6 +242,10 @@ body {
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
+hr.footer-line {
+    border: 1px solid #050a30;
+  }
 
 .column {
     flex: 1;
@@ -282,7 +287,7 @@ body {
 .marquee-content h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    color: #000000;
+    color: #050a30;
 }
 
 .left-to-right {
@@ -332,8 +337,12 @@ body {
 }
 
 .btn-services:hover {
-    background-color: #000000;
+    background-color: #050a30;
     color: white;
+}
+
+.footer-bg{
+    background-color: #f8f9fa;
 }
 
 .footer {
@@ -430,4 +439,18 @@ a {
 
 .btn-subscribe:hover {
     background-color:#000002;
+}
+
+.footer-company{
+    margin: auto;
+    margin-top: 200px;
+    color: #050a30;
+    width: 90%;
+}
+
+.footer-company h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 8rem;
+    font-family: 'Poppins', sans-serif;
 }
