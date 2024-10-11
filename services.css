@@ -35,6 +35,16 @@ body {
     display: block;
 }
 
+.underline-text {
+  text-decoration: underline;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px; 
+  display: inline-block;
+}
+
+.underline-text:hover {
+  text-decoration: none;
+}
 
 .navbar .nav-links {
     list-style: none;
@@ -123,4 +133,312 @@ body {
     max-width: 400px;
     border-radius: 50% 50% 0 0;
   }
-  
+
+  .btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    display: block;
+    padding: 15px 30px;
+    background-color: #050a30;
+    color: #f3f3f3;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+hr.break-line {
+  border: 1px solid #050a30;
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.process-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.process-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.process-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  color: #050505;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.step {
+  flex: 0 0 calc(50% - 1rem);
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.step-header {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+}
+
+.step-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #050a30;
+  margin-right: 10px;
+}
+
+.step-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.step-content p {
+  font-size: 1.125rem;
+  color: #333;
+}
+
+.connect-with-us{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #050a30
+}
+
+.div-connect{
+  padding: 75px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.connect-title {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.con-main-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.btn-get-started{
+  font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    display: block;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    color: #050a30;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-get-started span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-get-started span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-get-started:hover span {
+  padding-right: 25px;
+}
+
+.btn-get-started:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer{
+  margin-top: 20px;
+}
+
+hr.footer-line {
+  border: 1px solid #050a30;
+}
+
+.footer-bg{
+  background-color: #f8f9fa;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.email {
+  flex: 2;
+  max-width: 600px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .email {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.footer .email h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.footer .email h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.footer-text h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.footer h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin: 0;
+  color: #000;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+#subscribe-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#subscribe-form input[type="email"],
+.btn-subscribe {
+  width: 100%;
+  padding: 15px 5px;
+  border: 1px solid #b8b6b6;
+  border-radius: 4px;
+  color: #333;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.btn-subscribe {
+  background-color: #050a30;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  font-size: 15px;
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-subscribe:hover {
+  background-color:#000002;
+}
+
+.footer-company{
+  margin: auto;
+  margin-top: 200px;
+  color: #050a30;
+  width: 90%;
+}
+
+.footer-company h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 8rem;
+  font-family: 'Poppins', sans-serif;
+}
