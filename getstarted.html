@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="getstarted.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="larks-logo.svg">
+            </a>
+            <ul class="nav-links">
+                <li><a href="service.html">Services</a></li>
+                <li><a href="getstarted.html" class="underline-text">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="contact-container">
+        <div class="left-section">
+            <h2>We can’t wait to hear from you.</h2>
+            <p>Contact us today to explore how our tailored automation solutions can address your challenges, streamline your operations and maximise your efficiency. Let’s work together to unlock the full potential of your business.</p>
+        </div>
+
+        <div class="right-section">
+            <form>
+                <label for="first-name">Name <span>(required)</span></label>
+                <div class="name-input">
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                    <input type="text" id="last-name" placeholder="Last Name">
+                </div>
+
+                <label for="email">Email <span>(required)</span></label>
+                <input type="email" id="email" placeholder="Email" required>
+
+                <label for="website">What's your company website?</label>
+                <input type="url" id="website" placeholder="Company Website">
+
+                <label for="hear-about">How did you hear about us?</label>
+                <input type="text" id="hear-about" placeholder="How did you hear about us?">
+
+                <label for="bottlenecks">What are the current bottlenecks in your business that you hope to solve? <span>(required)</span></label>
+                <textarea id="bottlenecks" placeholder="Your message here" required></textarea>
+
+                <label for="bottlenecks">Write down anything that might help us with your inquiry <span>(required)</span></label>
+                <textarea id="bottlenecks" placeholder="Your message here" required></textarea>
+            </form>
+            <button class="btn"><span>Submit</span></button>
+        </div>
+    </section>
+    <footer class="footer-bg">
+        <div class="footer">
+        <hr class="footer-line">
+        <div class="email">
+            <h2>Leave us your email to stay informed</h2>
+            <h4>Sign up with your email address to receive news and updates.</h4>
+            <form id="subscribe-form" action="#" method="POST">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <div class="btn-signup">
+                    <button type="submit" class="btn-subscribe">SIGN UP</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer-text">
+            <h4>LEARN</h4>
+            <h3><a href="service.html">Services</a></h3>
+            <h3><a href="#">Learn</a></h3>
+            <h3><a href="#">Journal</a></h3>
+        </div>
+        <div class="footer-text">
+            <h4>CONTACT US</h4>
+            <h3><a href="#">Get Started</a></h3>
+        </div>
+        <div class="footer-text">
+            <h4>CONNECT</h4>
+            <div class="social-icons">
+                <a href="#">
+                    <svg fill="#000000" height="20px" width="20px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512" xml:space="preserve">
+                        <path d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8 c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z"></path>
+                        <polygon points="211.4,345.9 211.4,308.1 211.4,302.5 205.8,302.5 168,302.6 168.2,346 "></polygon>
+                        <path d="M183,401c0,38.6-31.4,70-70,70c-38.6,0-70-31.4-70-70c0-9.3,1.9-18.2,5.2-26.3H10v104.8C10,493,21,504,34.5,504h157 c13.5,0,24.5-11,24.5-24.5V374.7h-38.2C181.2,382.8,183,391.7,183,401z"></path>
+                        <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,374.7v104.8 c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157 c27.3,0,49.5,22.2,49.5,49.5V374.7z"></path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg fill="#000000" height="20px" width="20px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512" xml:space="preserve">
+                        <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3 v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2 c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+        <div class="footer-company">
+            <hr class="footer-line">
+            <h1>LARKS CATALYST</h1>
+        </div>
+    </footer>
+</body>
+</html>
