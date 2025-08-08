@@ -2,14 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif !important;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     color: #333;
     line-height: 1.6;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Stop horizontal overflow everywhere */
+}
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+      gap: 20px;
+
+}
 .navbar {
     padding: 0;
     background-color: #050a30;
@@ -26,115 +42,105 @@ body {
     align-items: center;
     margin-top: -20px;
 }
-
-.navbar .logo {
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+.navbar-logo {
     display: flex;
     align-items: center;
     justify-content: flex-start; 
 }
-
-.navbar .logo img {
-    width: 150px; 
-    height: auto;
-    display: block;
-}
-
-
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.navbar .nav-links li {
-    margin-left: 20px;
-}
-
-.navbar .nav-links li a {
-    font-weight: 500;
-    color: #fdf9f9;
-    position: relative;
+.nav-link{
     text-decoration: none;
+    font-weight: 500;
+    color: #fdf9f9 !important;
     font-size: 1rem;
-    padding-bottom: 2px;
+    position: relative;
 }
 
-.navbar .nav-links li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #fdfdfd;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    transition: width 0.3s ease;
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  color: #fdf9f9 !important;
+  font-size: 1rem;
 }
 
-.navbar .nav-links li a:hover::after {
-    width: 100%;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #fdf9f9;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
 }
 
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 2rem;
+.nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 .hero {
-    margin-top: -125px;
-    height: 100vh;
+    padding-top: 1rem; /* less space from navbar */
+    padding-bottom: 3rem;
     background-color: #050a30;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
+    min-height: 80vh; /* slightly shorter */
 }
 
 .hero .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 100%;
+    height: auto;
 }
 
 .hero-title {
     margin-top: 0;
     font-weight: bold;
     font-size: 2.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem; /* less gap below title */
     color: #fdf9f9;
 }
 
 .hero-subtitle {
     font-weight: 400;
-    font-size: 2.50rem;
-    margin-bottom: 3rem;
+    font-size: 2rem; /* slightly smaller for better fit */
+    margin-bottom: 1.5rem;
     color: #fdf9f9;
     line-height: 1.25;
 }
 
-.btn {
+
+
+.btn-call {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.25rem;
     display: inline-block;
     padding: 15px 30px;
     background-color: #000;
-    color: #f3f3f3;
+    color: #fdf9f9;
     text-decoration: none;
     border-radius: 8px;
-    transition: background-color 0.3s;
+    transition: padding 0.3s; /* only animate padding */
 }
 
-.btn span {
+.btn-call span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
+    transition: padding 0.5s; /* keep arrow animation smooth */
 }
 
-.btn span:after {
+.btn-call span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -143,11 +149,11 @@ body {
     transition: 0.5s;
 }
 
-.btn:hover span {
+.btn-call:hover span {
     padding-right: 25px;
 }
 
-.btn:hover span:after {
+.btn-call:hover span:after {
     opacity: 1;
     right: 0;
 }
@@ -205,16 +211,24 @@ body {
 
 .btn-weDo:hover {
     background-color: #050a30;
-    color: white;
+    color: #fdf9f9;
 }
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+    .hero-subtitle {
+        margin-bottom: 1.5rem;
+    }
+}
+
 
 .ourservices {
     width: 100%;
-    margin: 40px 50px;
-    padding: 20px;
     align-items: center;
     justify-content: center;
-    background-color: #ccc;
+    background-color: #fdf9f9;
 }
 
 #services-content {
@@ -286,6 +300,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #050a30;
+    font-size: 7rem;
 }
 
 .left-to-right {
@@ -323,7 +338,7 @@ body {
 .btn-services {
     display: inline-block;
     border: 2px solid black;
-    background-color: white;
+    background-color: #fdf9f9;
     color: black;
     padding: 14px 50px;
     font-size: 16px;
@@ -336,12 +351,9 @@ body {
 
 .btn-services:hover {
     background-color: #050a30;
-    color: white;
+    color: #fdf9f9;
 }
 
-hr.footer-line {
-    border: 1px solid #050a30;
-  }
 
 .footer-bg{
     background-color: #f8f9fa;
@@ -351,7 +363,6 @@ hr.footer-line {
     background-color: #f8f9fa;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     width: 100%;
 }
 
@@ -453,6 +464,6 @@ a {
 .footer-company h1 {
     font-weight: bold;
     text-align: center;
-    font-size: 8rem;
+    font-size: 7rem;
     font-family: 'Poppins', sans-serif;
 }
