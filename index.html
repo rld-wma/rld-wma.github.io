@@ -1,149 +1,200 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying Bootsrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>LARKS CATALYST</title>
     <link rel="icon" type="image/png" href="logo-larks.png">
 </head>
-    <body>
-        <nav class="navbar">
-            <div class="container">
-                <a href="#" class="logo">
-                    <img src="larks-logo.svg">
-                </a>
-                <ul class="nav-links">
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="getstarted.html">Get Started</a></li>
+
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-logo navbar-brand d-flex align-items-center">
+               <img src="larks-logo.svg" alt="Logo" class="img-fluid" style="max-width: 150px;">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="service.html" aria-current="page">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#">Get Started</a></li>
                 </ul>
             </div>
-        </nav>
-        <header class="hero">
-            <div class="container">
-                <h1 class="hero-title">LEADERSHIP AND MANAGEMENT CONSULTANCY SERVICES</h1>
-                <p class="hero-subtitle">We are an agency that focuses on cutting your costs and increasing revenue and efficiency through automation</p>
-                <p class="hero-subtitle">Your business deserves it.  </p>
-                <button class="btn"><span>Book A Discovery Call</span></button>
-            </div>
-        </header>
+        </div>
 
-        <section id="WeDo">
-            <div class="content-container">
-                 <img src="curve-line.svg" alt="LARKS CATALYST" class="image-weDo">
-                <div class="text-content">
-                    <h3>HI THERE. WE’RE LARKS CATALYST</h3>
+    </nav>
+   <header class="hero">
+        <div class="container pt-5 pt-md-7">
+           <h1 class="hero-title fw-bold fs-2 fs-md-1 text-center text-md-start">
+            LEADERSHIP AND MANAGEMENT CONSULTANCY SERVICES
+            </h1>
+
+            <p class="hero-subtitle">We are an agency that focuses on cutting your costs and increasing revenue and efficiency through automation</p>
+            <p class="hero-subtitle">Your business deserves it.</p>
+            <a href="#" class="btn-call"><span>Book A Discovery Call</span></a>
+        </div>
+    </header>
+
+   <section id="WeDo" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4">
+      
+                <div class="col-lg-5 col-md-6 text-center text-md-start">
+                    <img src="curve-line.svg" alt="LARKS CATALYST" class="img-fluid rounded">
+                </div>
+
+                <div class="col-lg-7 col-md-6">
+                    <h3 class="fw-bold">HI THERE. WE’RE LARKS CATALYST</h3>
                     <p class="para">Tired of doing the same repetitive tasks in your business? You need to be doing what you love!</p>
                     <p class="para">At LARKS CATALYST, we’re hyper-focused on helping our clients achieve their business goals through automation and AI.</p>
                     <button class="btn-weDo"><span>WHAT WE DO</span></button>
                 </div>
-            </div>
-        </section>
 
-        <section id="ourservices">
-            <div id ="services-content">
-                <div class="title">
-                    <h1>Personalised automation strategies for your whole business.</h1>
-                </div>
-                <div class="column-text">
-                    <div class="column">
-                        <h4>Efficiency Improvement</h4>
-                        <p class="para">Streamline your business operations and workflows with AI automation solutions.</p>
-                    </div>
-                    
-                    <div class="column">
-                        <h4>Cost Reduction</h4>
-                        <p class="para">Achieve significant cost savings by automating routine tasks and efficiently managing resources, allowing your business to thrive.</p>
-                    </div>
-                    
-                    <div class="column">
-                        <h4>Tailored Solutions</h4>
-                        <p class="para">Customise automations to perfectly align with your unique business goals, ensuring solutions that are as dynamic as your vision.</p>
-                    </div>
-                </div>
-                
-                <div class="column-text">
-                    <div class="column">
-                        <h4>Seamless Scalability</h4>
-                        <p class="para">Empower your business to grow effortlessly with automation designed to scale with your evolving needs, ensuring sustained success.</p>
-                    </div>
-                    
-                    <div class="column">
-                        <h4>AI Integration</h4>
-                        <p class="para">Integrate AI solutions into your business workflow and harness the power of AI agents working for your business.</p>
-                    </div>
-                    
-                    <div class="column">
-                        <h4>Strategic Data Insights</h4>
-                        <p class="para">Unleash the full potential of your data to gain actionable insights, enabling you to make strategic decisions that drive your business forward.</p>
-                    </div>
-                </div>    
             </div>
+        </div>
+    </section>
 
-            <div id="marquee">
-                <div class="marquee-content left-to-right">
-                    <h1>PROGRESSIVE • INNOVATIVE</h1>
-                </div>
-                <div class="marquee-content right-to-left">
-                    <h1>PROGRESSIVE • INNOVATIVE</h1>
+<section id="ourservices" class="ourservices">
+    <div id="services-content" class="container">
+        <!-- Title -->
+        <div class="title text-center text-md-start">
+            <h1>Personalised automation strategies for your whole business.</h1>
+        </div>
+
+        <!-- First Row -->
+        <div class="row column-text">
+            <div class="col-12 col-md-4 d-flex">
+                <div class="column">
+                    <h4>Efficiency Improvement</h4>
+                    <p class="para">Streamline your business operations and workflows with AI automation solutions.</p>
                 </div>
             </div>
+            <div class="col-12 col-md-4 d-flex">
+                <div class="column">
+                    <h4>Cost Reduction</h4>
+                    <p class="para">Achieve significant cost savings by automating routine tasks and efficiently managing resources, allowing your business to thrive.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex">
+                <div class="column">
+                    <h4>Tailored Solutions</h4>
+                    <p class="para">Customise automations to perfectly align with your unique business goals, ensuring solutions that are as dynamic as your vision.</p>
+                </div>
+            </div>
+        </div>
 
-           <div class="btn-div">
-            <a href="service.html"> <button class="btn-services"><span>OUR SERVICES</span></button></a>
-           </div>
-        </section>
-        <footer class="footer-bg">
-            <div class="footer">
-            <hr class="footer-line">
-            <div class="email">
+        <!-- Second Row -->
+        <div class="row column-text">
+            <div class="col-12 col-md-4 d-flex">
+                <div class="column">
+                    <h4>Seamless Scalability</h4>
+                    <p class="para">Empower your business to grow effortlessly with automation designed to scale with your evolving needs, ensuring sustained success.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex">
+                <div class="column">
+                    <h4>AI Integration</h4>
+                    <p class="para">Integrate AI solutions into your business workflow and harness the power of AI agents working for your business.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex">
+                <div class="column">
+                    <h4>Strategic Data Insights</h4>
+                    <p class="para">Unleash the full potential of your data to gain actionable insights, enabling you to make strategic decisions that drive your business forward.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marquee -->
+    <div id="marquee" class="my-5">
+        <div class="marquee-content left-to-right">
+            <h1>PROGRESSIVE • INNOVATIVE</h1>
+        </div>
+        <div class="marquee-content right-to-left">
+            <h1>PROGRESSIVE • INNOVATIVE</h1>
+        </div>
+    </div>
+
+    <!-- Button -->
+    <div class="btn-div">
+        <a href="service.html">
+            <button class="btn-services"><span>OUR SERVICES</span></button>
+        </a>
+    </div>
+</section>
+
+<footer class="footer-bg">
+    <div class="container">
+        <div class="row footer">
+            
+            <!-- Email Signup -->
+            <div class="col-lg-6 col-md-12 email">
                 <h2>Leave us your email to stay informed</h2>
                 <h4>Sign up with your email address to receive news and updates.</h4>
-                <form id="subscribe-form" action="#" method="POST">
-                    <input type="email" id="email" name="email" placeholder="Email Address" required>
-                    <div class="btn-signup">
+                <form id="subscribe-form" action="#" method="POST" class="row g-2">
+                    <div class="col-12">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="col-12 btn-signup">
                         <button type="submit" class="btn-subscribe">SIGN UP</button>
                     </div>
                 </form>
             </div>
-            <div class="footer-text">
+
+            <!-- Footer Links -->
+            <div class="col-lg-2 col-md-4 col-6 footer-text mt-4 mt-lg-0">
                 <h4>LEARN</h4>
                 <h3><a href="service.html">Services</a></h3>
                 <h3><a href="#">Learn</a></h3>
                 <h3><a href="#">Journal</a></h3>
             </div>
-            <div class="footer-text">
+
+            <div class="col-lg-2 col-md-4 col-6 footer-text mt-4 mt-lg-0">
                 <h4>CONTACT US</h4>
-                <h3><a href="getstarted.html">Get Started</a></h3>
+                <h3><a href="#">Get Started</a></h3>
             </div>
-            <div class="footer-text">
+
+            <div class="col-lg-2 col-md-4 col-12 footer-text mt-4 mt-lg-0">
                 <h4>CONNECT</h4>
-                <div class="social-icons">
+                <div class="social-icons d-flex gap-3 mt-2">
+                    <!-- Instagram -->
                     <a href="#">
-                        <svg fill="#000000" height="20px" width="20px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512" xml:space="preserve">
-                            <path d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8 c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z"></path>
+                        <svg fill="#000000" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512">
+                            <path d="M113,446c24.8,0,45.1-20.2,45.1-45.1c0-9.8-3.2-18.9-8.5-26.3c-8.2-11.3-21.5-18.8-36.5-18.8s-28.3,7.4-36.5,18.8c-5.3,7.4-8.5,16.5-8.5,26.3C68,425.8,88.2,446,113,446z"></path>
                             <polygon points="211.4,345.9 211.4,308.1 211.4,302.5 205.8,302.5 168,302.6 168.2,346 "></polygon>
                             <path d="M183,401c0,38.6-31.4,70-70,70c-38.6,0-70-31.4-70-70c0-9.3,1.9-18.2,5.2-26.3H10v104.8C10,493,21,504,34.5,504h157 c13.5,0,24.5-11,24.5-24.5V374.7h-38.2C181.2,382.8,183,391.7,183,401z"></path>
                             <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M241,374.7v104.8 c0,27.3-22.2,49.5-49.5,49.5h-157C7.2,529-15,506.8-15,479.5V374.7v-52.3c0-27.3,22.2-49.5,49.5-49.5h157 c27.3,0,49.5,22.2,49.5,49.5V374.7z"></path>
                         </svg>
                     </a>
+                    <!-- Facebook -->
                     <a href="#">
-                        <svg fill="#000000" height="20px" width="20px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512" xml:space="preserve">
+                        <svg fill="#000000" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="-143 145 512 512">
                             <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3 v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2 c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"></path>
                         </svg>
                     </a>
                 </div>
             </div>
+
         </div>
-            <div class="footer-company">
-                <hr class="footer-line">
-                <h1>LARKS CATALYST</h1>
-            </div>
-    </footer>
-    </body>
+
+        <!-- Footer Company -->
+        <div class="footer-company text-center mt-5">
+            <hr class="footer-line">
+            <h1>LARKS CATALYST</h1>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
